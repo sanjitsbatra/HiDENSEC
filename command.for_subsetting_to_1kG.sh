@@ -1,0 +1,1 @@
+awk -F $"\t" 'FNR==NR{tg[$1"\t"$2"\t"$3"\t"$4]=1;next}{if(substr($0,1,1)!="#"){n=split($5,a,",");if(n==2){key=$1"\t"$2"\t"$4"\t"a[1];if(key in tg){n=split($NF,b,":");split(b[2],c,",");print $1"\t"$2"\t"c[1]"\t"c[2]"\t"a[1]}}}next}' 1000G.AF_0.4_0.6.tsv CC4_SNUC1.Omni.bam.sorted.bam.mpileup > CC4.hg38.AF.with_ALT.chr1
