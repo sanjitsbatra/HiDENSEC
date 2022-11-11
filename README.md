@@ -1,5 +1,5 @@
 # HiDENSEC
-This repository contains scripts for performing HiDENSEC analysis given a Hi-C BAM file. The manuscript can be found here and the raw fastq and BAM files used for this analysis are provided at SRA __.
+This repository contains scripts for performing HiDENSEC analysis given a Hi-C BAM file. 
 
 1. Convert BAM files into .hic files and matrices
 We provide a bam2hic.sh script to convert a Hi-C BAM file into .assembly.hic and .hg38.hic files.
@@ -12,7 +12,7 @@ We first obtained all the SNVs from 1000G that have population Allele Frequencie
 For each BAM file we then provide the bam2sfs.sh script that performs alle frequency analysis on the BAM file.
 
 4. HiDENSEC analysis
-Given the rowsums and Hi-C data in sparse matrix format, we perform HiDENSEC analysis to generate a Hi-C map, to infer genome-wide absolute copy number profiles and infer tumor purity with HiDENSEC.nb.
+Given the rowsums and Hi-C data in sparse matrix format, we perform HiDENSEC analysis to generate a Hi-C map, to infer genome-wide absolute copy number profiles and infer tumor purity. All associated scripts are within the HiDENSEC_Mathematica folder.
 
 4. CNVkit copy number calling
 Our custom script run_CNVkit.sh provides a recipe to perform copy number calling using short-read sequencing data
